@@ -7,4 +7,15 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ["~/assets/app.css"],
+  app: {
+    head: {
+      bodyAttrs: {
+        class: 'drawer min-h-screen bg-base-200 lg:drawer-open'
+      }
+    },
+    rootTag : 'body',
+    rootAttrs : {
+      id: 'app'
+    },
+  }
 })
